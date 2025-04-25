@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <img src="C:\Users\vshas\Downloads\logo.webp" alt="Restaurant Logo" width="100" height="100">
+                    <h1><big>Restaurant Menu</big></h1>
+                </div>
+                <div class="col-md-9">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="home.html">Home</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="menu.html">Menu</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="reservations.html">Reservations</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mt-4">
+        <ul class="nav nav-tabs" id="menuTabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="appetizers-tab" data-toggle="tab" href="#appetizers" role="tab" aria-controls="appetizers" aria-selected="true">Appetizers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="mains-tab" data-toggle="tab" href="#mains" role="tab" aria-controls="mains" aria-selected="false">Mains</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="desserts-tab" data-toggle="tab" href="#desserts" role="tab" aria-controls="desserts" aria-selected="false">Desserts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="beverages-tab" data-toggle="tab" href="#beverages" role="tab" aria-controls="beverages" aria-selected="false">Beverages</a>
+            </li>
+        </ul>
+
+        <div class="tab-content mt-4" id="menuContent">
+            <div class="tab-pane fade show active" id="appetizers" role="tabpanel" aria-labelledby="appetizers-tab">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col menu-item" data-category="appetizers">
+                        <div class="card h-100">
+                            <center>     <img src="C:\Users\vshas\Downloads\garlicbread.jpeg" width=200px height=300px style="transform:rotate(90deg);" alt="Appetizer 1"></center>
+                            <div class="card-body">
+                                <h5 class="card-title">Garlic Bread</h5>
+                                <p class="card-text">Toasted bread with garlic and herbs.</p>
+                                <p class="card-text"><small class="text-muted">$5.99</small></p>
+                                <button class="btn btn-primary view-details-btn" data-item-id="appetizer1">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col menu-item" data-category="appetizers">
+                        <div class="card h-100">
+                            <center>     <img src="C:\Users\vshas\Downloads\springroll.jpeg" width=200px height=300px style="transform:rotate(90deg);" alt="Appetizer 2"></center>
+
+                            <div class="card-body">
+                                <h5 class="card-title">Spring Rolls</h5>
+                                <p class="card-text">Crispy vegetable spring rolls with dipping sauce.</p>
+                                <p class="card-text"><small class="text-muted">$6.50</small></p>
+                                <button class="btn btn-primary view-details-btn" data-item-id="appetizer2">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="mains" role="tabpanel" aria-labelledby="mains-tab">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col menu-item" data-category="mains">
+                        <div class="card h-100">
+                            <center>     <img src="C:\Users\vshas\Downloads\pasta.jpg" width=200px height=300px alt="Main 1"></center>
+                            <div class="card-body">
+                                <h5 class="card-title">Pasta Carbonara</h5>
+                                <p class="card-text">Spaghetti with eggs, cheese, pancetta, and black pepper.</p>
+                                <p class="card-text"><small class="text-muted">$12.99</small></p>
+                                <button class="btn btn-primary view-details-btn" data-item-id="main1">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col menu-item" data-category="mains">
+                        <div class="card h-100">
+
+                            <center>     <img src="C:\Users\vshas\Downloads\grilledsalmon.jpeg" width=200px height=300px alt="Main 2"></center>
+                                                                        <div class="card-body">
+                                <h5 class="card-title">Grilled Salmon</h5>
+                                <p class="card-text">Freshly grilled salmon with roasted vegetables.</p>
+                                <p class="card-text"><small class="text-muted">$15.50</small></p>
+                                <button class="btn btn-primary view-details-btn" data-item-id="main2">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col menu-item" data-category="desserts">
+                        <div class="card h-100">
+                            <center>     <img src="C:\Users\vshas\Downloads\ChocoVanilla.png" width=200px height=300px alt="Dessert 1"></center>
+
+                                                                        <div class="card-body">
+                                <h5 class="card-title">Chocolate Cake</h5>
+                                <p class="card-text">Rich chocolate cake with vanilla ice cream.</p>
+                                <p class="card-text"><small class="text-muted">$7.00</small></p>
+                                <button class="btn btn-primary view-details-btn" data-item-id="dessert1">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col menu-item" data-category="desserts">
+                        <div class="card h-100">
+                            <center>     <img src="C:\Users\vshas\Downloads\tiramisu.jpeg" width=200px height=300px alt="Dessert 2"></center>
+
+                            <div class="card-body">
+                                <h5 class="card-title">Tiramisu</h5>
+                                <p class="card-text">Classic Italian coffee-flavored dessert.</p>
+                                <p class="card-text"><small class="text-muted">$6.75</small></p>
+                                <button class="btn btn-primary view-details-btn" data-item-id="dessert2">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="beverages" role="tabpanel" aria-labelledby="beverages-tab">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col menu-item" data-category="beverages">
+                        <div class="card h-100">
+                            <center>     <img src="C:\Users\vshas\Downloads\icedtea.webp" width=200px height=300px alt="Beverage 1"></center>
+
+                            <div class="card-body">
+                                <h5 class="card-title">Iced Tea</h5>
+                                <p class="card-text">Refreshing iced tea.</p>
+                                <p class="card-text"><small class="text-muted">$3.00</small></p>
+                                <button class="btn btn-primary view-details-btn" data-item-id="beverage1">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col menu-item" data-category="beverages">
+                        <div class="card h-100">
+                            <center>     <img src="C:\Users\vshas\Downloads\lemonade.jpeg" width=200px height=300px alt="Beverage 2"></center>
+
+                            <div class="card-body">
+                                <h5 class="card-title">Lemonade</h5>
+                                <p class="card-text">Homemade lemonade.</p>
+                                <p class="card-text"><small class="text-muted">$3.50</small></p>
+                                <button class="btn btn-primary view-details-btn" data-item-id="beverage2">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="itemDetailsModal" tabindex="-1" aria-labelledby="itemDetailsModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="itemDetailsModalLabel">Item Details</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="itemDetailsContent">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light py-4 mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Restaurant Logo</h5>
+                    <p>&copy; 2025 All rights reserved.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Menu</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Appetizers</a></li>
+                        <li><a href="#">Mains</a></li>
+                        <li><a href="#">Desserts</a></li>
+                        <li><a href="#">Beverages</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Subscribe</h5>
+                    <p>Get email updates about our specials.</p>
+                    <form class="form-inline">
+                        <input type="email" class="form-control mr-2" placeholder="Your Email">
+                        <button type="submit" class="btn btn-outline-dark">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
