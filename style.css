@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.view-details-btn {
+    margin-top: 10px;
+}
+#appetizers-tab.active {
+    background-color: #f8d7da;
+    color: #721c24; 
+}
+
+#mains-tab.active {
+    background-color: #d4edda; 
+    color: #155724;
+}
+
+#desserts-tab.active {
+    background-color: #fff3cd; 
+    color: #856404; 
+}
+
+#beverages-tab.active {
+    background-color: #e2e6ea; 
+    color: #383d41; 
+}
+#appetizers .card {
+    border-color: #f8d7da;
+}
+
+#mains .card {
+    border-color: #d4edda;
+}
+
+#desserts .card {
+    border-color: #fff3cd;
+}
+
+#beverages .card {
+    border-color: #e2e6ea;
+}
